@@ -7,11 +7,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;/*correção*/
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .header-menu {
@@ -23,10 +20,7 @@
 .header-menu a{
     display: inline-block;/*correção*/
     padding: 16px 0px;
-    font-size: 18px;
     position: relative;
-    font-family: "Poppins";
-    font-weight: 400;
 }
 .header-menu a:after {
     content: "";
@@ -39,7 +33,7 @@
     position: absolute;
 }
 
-.header-menu a:hover:after{
+.header-menu a:hover:after,.header-menu a.ativo::after{
     width: 100%;
 }
 
